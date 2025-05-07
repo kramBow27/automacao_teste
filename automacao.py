@@ -1,32 +1,43 @@
-"""RPA Bot – Portal da Transparência  v1.6
+"""RPA Bot – Portal da Transparência  v1.7
 ════════════════════════════════════
-* **Nova estratégia de coleta da lista**: se o polling de 30 s não achar
-  `<a.link‑busca‑nome>`, o bot **analisa o `page_source`** diretamente —
-  muitos casos o HTML já contém os links, mas o DOM ainda não expos.
-* Se mesmo assim não houver link, grava `error-list‑*.html/png`.
-* `wait_for_results()` agora:
-  1. espera `document.readyState=="complete"`;
-  2. tenta achar pelo menos 1 link por até 30 s;
-  3. se falhar, faz busca em `driver.page_source`.
-* Ajuste no user‑agent + lang para evitar bloqueio em modo headless.
-
-Instalação/uso continuam iguais.
+* **Compatível com qualquer versão do Chrome**: usa o Selenium Manager
+  (Selenium ≥ 4.18) para baixar e gerenciar automaticamente o ChromeDriver.
+* Estratégia de coleta da lista, evidências e logging iguais à versão 1.6.
 """
+
 from __future__ import annotations
-import json, argparse, time, traceback, uuid, logging, sys, re
-from typing import List, Dict, Optional
-from urllib.parse import urlencode, quote_plus
+
+import argparse
+import json
+import logging
+import re
+import sys
+import time
+import traceback
+import uuid
+from typing import Dict, List, Optional
+from urllib.parse import quote_plus, urlencode
+
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+
+# ---------------------------------------------------------------------------
+# Constantes
+# ---------------------------------------------------------------------------
 
 BASE = "https://portaldatransparencia.gov.br"
 LIST_ENDPOINT = f"{BASE}/pessoa-fisica/busca/lista"
 
-# ---------- logging ----------
+anchor_rx = re.compile(
+    r"href=\"(/busca/pessoa-fisica/[^\"]+)\"[^>]*class=\"link-busca-nome\""
+)
+
+# ---------------------------------------------------------------------------
+# Logger helper
+# ---------------------------------------------------------------------------
+
 
 def setup_logger(show_console: bool):
     fmt = "%(asctime)s [%(levelname)s] %(message)s"
@@ -42,9 +53,13 @@ def setup_logger(show_console: bool):
         lg.addHandler(ch)
     return lg
 
+
 logger = setup_logger(False)
 
-# ---------- util evidência ----------
+# ---------------------------------------------------------------------------
+# Utilidades de evidência
+# ---------------------------------------------------------------------------
+
 
 def save_evidence(driver: webdriver.Chrome, prefix: str):
     uid = uuid.uuid4().hex[:8]
@@ -58,22 +73,33 @@ def save_evidence(driver: webdriver.Chrome, prefix: str):
     except Exception as e:
         logger.error("Falha ao salvar evidência: %s", e)
 
-# ---------- webdriver ----------
+
+# ---------------------------------------------------------------------------
+# WebDriver – compatível com qualquer Chrome
+# ---------------------------------------------------------------------------
+
 
 def new_driver(visible: bool = False) -> webdriver.Chrome:
     opts = Options()
     if not visible:
         opts.add_argument("--headless=new")
+    opts.add_argument("--window-size=1920,1080")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--no-sandbox")
-    opts.add_argument("--window-size=1920,1080")
     opts.add_argument("--disable-blink-features=AutomationControlled")
     opts.add_argument("--lang=pt-BR")
-    opts.add_argument("--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119 Safari/537.36")
-    service = Service(ChromeDriverManager().install())
-    return webdriver.Chrome(service=service, options=opts)
+    opts.add_argument(
+        "--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/120 Safari/537.36"
+    )
+    # Selenium Manager cuidará de baixar / escolher o ChromeDriver correto.
+    return webdriver.Chrome(options=opts)
 
-# ---------- helpers ----------
+
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
+
 
 def build_list_url(query: Optional[str]) -> str:
     params = {
@@ -85,12 +111,13 @@ def build_list_url(query: Optional[str]) -> str:
         params["termo"] = query
     return f"{LIST_ENDPOINT}?{urlencode(params, quote_via=quote_plus)}"
 
-anchor_rx = re.compile(r"href=\"(/busca/pessoa-fisica/[^\"]+)\"[^>]*class=\"link-busca-nome\"")
 
-# ---------- scraping ----------
+# ---------------------------------------------------------------------------
+# Scraping core
+# ---------------------------------------------------------------------------
+
 
 def wait_for_results(driver: webdriver.Chrome, timeout: int = 30) -> List[str]:
-    # 1. aguarda carregamento completo
     driver.execute_script("return document.readyState")
     start = time.time()
     while time.time() - start < timeout:
@@ -98,9 +125,9 @@ def wait_for_results(driver: webdriver.Chrome, timeout: int = 30) -> List[str]:
         if links:
             return [a.get_attribute("href") for a in links]
         time.sleep(1)
-    # 2. fallback: regex no HTML
-    m = anchor_rx.findall(driver.page_source)
-    return [BASE + href for href in m]
+    # Fallback: busca via regex no HTML
+    matches = anchor_rx.findall(driver.page_source)
+    return [BASE + href for href in matches]
 
 
 def search_people(driver: webdriver.Chrome, query: Optional[str]) -> List[str]:
@@ -131,12 +158,17 @@ def parse_benefit(driver: webdriver.Chrome, url: str) -> Dict:
     for tr in rows:
         tds = tr.find_elements(By.TAG_NAME, "td")
         if len(tds) >= 7:
-            parcelas.append({
-                "mes": tds[0].text, "parcela": tds[1].text,
-                "uf": tds[2].text, "municipio": tds[3].text,
-                "enquadramento": tds[4].text, "valor": tds[5].text,
-                "obs": tds[6].text,
-            })
+            parcelas.append(
+                {
+                    "mes": tds[0].text,
+                    "parcela": tds[1].text,
+                    "uf": tds[2].text,
+                    "municipio": tds[3].text,
+                    "enquadramento": tds[4].text,
+                    "valor": tds[5].text,
+                    "obs": tds[6].text,
+                }
+            )
     return {"beneficio": title, "parcelas": parcelas}
 
 
@@ -150,29 +182,39 @@ def parse_person(driver: webdriver.Chrome, url: str) -> Dict:
         "screenshot": driver.get_screenshot_as_base64(),
         "beneficios": [],
     }
-    buttons = driver.find_elements(By.CSS_SELECTOR, "#accordion-recebimentos-recursos a.br-button.secondary")
+    buttons = driver.find_elements(
+        By.CSS_SELECTOR, "#accordion-recebimentos-recursos a.br-button.secondary"
+    )
     for b in buttons:
         person["beneficios"].append(parse_benefit(driver, b.get_attribute("href")))
     return person
 
-# ---------- main run ----------
+
+# ---------------------------------------------------------------------------
+# Runner
+# ---------------------------------------------------------------------------
+
 
 def run(query: Optional[str], visible: bool) -> Dict:
-    d = new_driver(visible)
+    driver = new_driver(visible)
     try:
-        urls = search_people(d, query)
+        urls = search_people(driver, query)
         pessoas = []
         for u in urls:
             try:
-                pessoas.append(parse_person(d, u))
+                pessoas.append(parse_person(driver, u))
             except Exception as e:
                 logger.error("Erro na pessoa %s: %s", u, e)
-                save_evidence(d, "person")
+                save_evidence(driver, "person")
         return {"consulta": query or "*primeiros 10*", "pessoas": pessoas}
     finally:
-        d.quit()
+        driver.quit()
 
-# ---------- CLI ----------
+
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
 
 def cli():
     ap = argparse.ArgumentParser()
@@ -184,6 +226,7 @@ def cli():
 
     global logger
     logger = setup_logger(args.debug)
+
     try:
         data = run(args.query.strip() or None, visible=args.visible)
         with open(args.out, "w", encoding="utf-8") as fp:
@@ -193,6 +236,7 @@ def cli():
         logger.error("Falha: %s", e)
         traceback.print_exc()
         sys.exit(1)
+
 
 if __name__ == "__main__":
     cli()
