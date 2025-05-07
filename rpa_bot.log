@@ -1,0 +1,178 @@
+2025-05-06 21:48:13,666 [INFO] Início da coleta – termo: '<vazio>'
+2025-05-06 21:48:13,666 [INFO] Início da coleta – termo: '<vazio>'
+2025-05-06 21:48:15,661 [INFO] Acessando página de busca…
+2025-05-06 21:48:15,661 [INFO] Acessando página de busca…
+2025-05-06 21:48:15,806 [DEBUG] Tentando clicar em ('id', 'beneficiarioProgramaSocial')
+2025-05-06 21:48:15,806 [DEBUG] Tentando clicar em ('id', 'beneficiarioProgramaSocial')
+2025-05-06 21:48:56,313 [WARNING] Timeout no clique (('id', 'beneficiarioProgramaSocial')) – tentando JS…
+2025-05-06 21:48:56,313 [WARNING] Timeout no clique (('id', 'beneficiarioProgramaSocial')) – tentando JS…
+2025-05-06 21:48:56,320 [ERROR] Falha JS click ('id', 'beneficiarioProgramaSocial'): Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="beneficiarioProgramaSocial"]"}
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x008AD363+60275]
+	GetHandleVerifier [0x008AD3A4+60340]
+	(No symbol) [0x006E06F3]
+	(No symbol) [0x00728690]
+	(No symbol) [0x00728A2B]
+	(No symbol) [0x00770EE2]
+	(No symbol) [0x0074D0D4]
+	(No symbol) [0x0076E6EB]
+	(No symbol) [0x0074CE86]
+	(No symbol) [0x0071C623]
+	(No symbol) [0x0071D474]
+	GetHandleVerifier [0x00AF8FE3+2467827]
+	GetHandleVerifier [0x00AF45E6+2448886]
+	GetHandleVerifier [0x00B0F80C+2560028]
+	GetHandleVerifier [0x008C3DF5+153093]
+	GetHandleVerifier [0x008CA3BD+179149]
+	GetHandleVerifier [0x008B4BB8+91080]
+	GetHandleVerifier [0x008B4D60+91504]
+	GetHandleVerifier [0x0089FA10+4640]
+	BaseThreadInitThunk [0x76375D49+25]
+	RtlInitializeExceptionChain [0x7735CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7735CF81+561]
+
+2025-05-06 21:48:56,320 [ERROR] Falha JS click ('id', 'beneficiarioProgramaSocial'): Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="beneficiarioProgramaSocial"]"}
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x008AD363+60275]
+	GetHandleVerifier [0x008AD3A4+60340]
+	(No symbol) [0x006E06F3]
+	(No symbol) [0x00728690]
+	(No symbol) [0x00728A2B]
+	(No symbol) [0x00770EE2]
+	(No symbol) [0x0074D0D4]
+	(No symbol) [0x0076E6EB]
+	(No symbol) [0x0074CE86]
+	(No symbol) [0x0071C623]
+	(No symbol) [0x0071D474]
+	GetHandleVerifier [0x00AF8FE3+2467827]
+	GetHandleVerifier [0x00AF45E6+2448886]
+	GetHandleVerifier [0x00B0F80C+2560028]
+	GetHandleVerifier [0x008C3DF5+153093]
+	GetHandleVerifier [0x008CA3BD+179149]
+	GetHandleVerifier [0x008B4BB8+91080]
+	GetHandleVerifier [0x008B4D60+91504]
+	GetHandleVerifier [0x0089FA10+4640]
+	BaseThreadInitThunk [0x76375D49+25]
+	RtlInitializeExceptionChain [0x7735CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7735CF81+561]
+
+2025-05-06 21:48:56,402 [ERROR] Evidência salva: error-click-c2f9dc1e.html  error-click-c2f9dc1e.png
+2025-05-06 21:48:56,402 [ERROR] Evidência salva: error-click-c2f9dc1e.html  error-click-c2f9dc1e.png
+2025-05-06 21:48:58,500 [ERROR] Falha geral: Não consegui marcar o checkbox 'Beneficiário de Programa Social'. O layout da página pode ter mudado.
+2025-05-06 21:48:58,500 [ERROR] Falha geral: Não consegui marcar o checkbox 'Beneficiário de Programa Social'. O layout da página pode ter mudado.
+2025-05-06 21:52:29,242 [INFO] Abrindo lista: https://portaldatransparencia.gov.br/pessoa-fisica/busca/lista?pagina=1&tamanhoPagina=10&beneficiarioProgramaSocial=true
+2025-05-06 21:52:29,242 [INFO] Abrindo lista: https://portaldatransparencia.gov.br/pessoa-fisica/busca/lista?pagina=1&tamanhoPagina=10&beneficiarioProgramaSocial=true
+2025-05-06 21:52:51,527 [ERROR] Erro: Não foi possível carregar a lista de resultados – verifique conexão ou possíveis bloqueios.
+2025-05-06 21:52:51,527 [ERROR] Erro: Não foi possível carregar a lista de resultados – verifique conexão ou possíveis bloqueios.
+2025-05-06 21:58:38,978 [INFO] Abrindo lista: https://portaldatransparencia.gov.br/pessoa-fisica/busca/lista?pagina=1&tamanhoPagina=10&beneficiarioProgramaSocial=true
+2025-05-06 21:59:09,533 [ERROR] Evidência salva: error-list-e3371b01.html  error-list-e3371b01.png
+2025-05-06 21:59:11,636 [ERROR] Falha: A lista de resultados não apareceu: Elemento #resultados não carregou dentro do tempo limite.
+2025-05-06 22:03:09,422 [INFO] Abrindo lista: https://portaldatransparencia.gov.br/pessoa-fisica/busca/lista?pagina=1&tamanhoPagina=10&beneficiarioProgramaSocial=true
+2025-05-06 22:03:16,936 [INFO] Abrindo lista: https://portaldatransparencia.gov.br/pessoa-fisica/busca/lista?pagina=1&tamanhoPagina=10&beneficiarioProgramaSocial=true
+2025-05-06 22:03:20,436 [INFO] Coletados 10 links
+2025-05-06 22:03:20,436 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/271323057-a-anne-christine-silva-ribeiro
+2025-05-06 22:03:22,569 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/315919307-a-da-maria-camilo
+2025-05-06 22:03:24,756 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima
+2025-05-06 22:03:28,501 [ERROR] Erro na pessoa https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x008AD363+60275]
+	GetHandleVerifier [0x008AD3A4+60340]
+	(No symbol) [0x006E06F3]
+	(No symbol) [0x006F20E1]
+	(No symbol) [0x006F11C0]
+	(No symbol) [0x006E78F3]
+	(No symbol) [0x006E79D3]
+	(No symbol) [0x006E5DFA]
+	(No symbol) [0x006E93A5]
+	(No symbol) [0x0076F640]
+	(No symbol) [0x0074D08C]
+	(No symbol) [0x0076E6EB]
+	(No symbol) [0x0074CE86]
+	(No symbol) [0x0071C623]
+	(No symbol) [0x0071D474]
+	GetHandleVerifier [0x00AF8FE3+2467827]
+	GetHandleVerifier [0x00AF45E6+2448886]
+	GetHandleVerifier [0x00B0F80C+2560028]
+	GetHandleVerifier [0x008C3DF5+153093]
+	GetHandleVerifier [0x008CA3BD+179149]
+	GetHandleVerifier [0x008B4BB8+91080]
+	GetHandleVerifier [0x008B4D60+91504]
+	GetHandleVerifier [0x0089FA10+4640]
+	BaseThreadInitThunk [0x76375D49+25]
+	RtlInitializeExceptionChain [0x7735CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7735CF81+561]
+
+2025-05-06 22:03:28,653 [ERROR] Evidência salva: error-person-11fdc624.html  error-person-11fdc624.png
+2025-05-06 22:03:28,654 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/195266592-a-dja-simony-dos-santos-silva
+2025-05-06 22:03:32,453 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/198070312-a-dla-dos-santos-de-oliveira
+2025-05-06 22:03:36,628 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/210435205-a-dna-salomita-da-silva-fonseca-lima
+2025-05-06 22:03:39,573 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/107816923-a-dna-shara-silva-santos
+2025-05-06 22:03:41,614 [ERROR] Erro na pessoa https://portaldatransparencia.gov.br/busca/pessoa-fisica/107816923-a-dna-shara-silva-santos: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x008AD363+60275]
+	GetHandleVerifier [0x008AD3A4+60340]
+	(No symbol) [0x006E06F3]
+	(No symbol) [0x006F20E1]
+	(No symbol) [0x006F11C0]
+	(No symbol) [0x006E78F3]
+	(No symbol) [0x006E79D3]
+	(No symbol) [0x006E5DFA]
+	(No symbol) [0x006E93A5]
+	(No symbol) [0x0076F640]
+	(No symbol) [0x0074D08C]
+	(No symbol) [0x0076E6EB]
+	(No symbol) [0x0074CE86]
+	(No symbol) [0x0071C623]
+	(No symbol) [0x0071D474]
+	GetHandleVerifier [0x00AF8FE3+2467827]
+	GetHandleVerifier [0x00AF45E6+2448886]
+	GetHandleVerifier [0x00B0F80C+2560028]
+	GetHandleVerifier [0x008C3DF5+153093]
+	GetHandleVerifier [0x008CA3BD+179149]
+	GetHandleVerifier [0x008B4BB8+91080]
+	GetHandleVerifier [0x008B4D60+91504]
+	GetHandleVerifier [0x0089FA10+4640]
+	BaseThreadInitThunk [0x76375D49+25]
+	RtlInitializeExceptionChain [0x7735CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7735CF81+561]
+
+2025-05-06 22:03:41,772 [ERROR] Evidência salva: error-person-e717a7fb.html  error-person-e717a7fb.png
+2025-05-06 22:03:41,772 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/222647277-a-dria-batista-da-conceicao
+2025-05-06 22:03:44,426 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/213941478-a-emmanuel-iorbee
+2025-05-06 22:03:46,636 [INFO] Processando pessoa: https://portaldatransparencia.gov.br/busca/pessoa-fisica/6027443-a-gueda-maria-sidronio
+2025-05-06 22:03:48,624 [ERROR] Erro na pessoa https://portaldatransparencia.gov.br/busca/pessoa-fisica/6027443-a-gueda-maria-sidronio: Message: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.115); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x008AD363+60275]
+	GetHandleVerifier [0x008AD3A4+60340]
+	(No symbol) [0x006E06F3]
+	(No symbol) [0x006F20E1]
+	(No symbol) [0x006F11C0]
+	(No symbol) [0x006E78F3]
+	(No symbol) [0x006E79D3]
+	(No symbol) [0x006E5DFA]
+	(No symbol) [0x006E93A5]
+	(No symbol) [0x0076F640]
+	(No symbol) [0x0074D08C]
+	(No symbol) [0x0076E6EB]
+	(No symbol) [0x0074CE86]
+	(No symbol) [0x0071C623]
+	(No symbol) [0x0071D474]
+	GetHandleVerifier [0x00AF8FE3+2467827]
+	GetHandleVerifier [0x00AF45E6+2448886]
+	GetHandleVerifier [0x00B0F80C+2560028]
+	GetHandleVerifier [0x008C3DF5+153093]
+	GetHandleVerifier [0x008CA3BD+179149]
+	GetHandleVerifier [0x008B4BB8+91080]
+	GetHandleVerifier [0x008B4D60+91504]
+	GetHandleVerifier [0x0089FA10+4640]
+	BaseThreadInitThunk [0x76375D49+25]
+	RtlInitializeExceptionChain [0x7735CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x7735CF81+561]
+
+2025-05-06 22:03:48,772 [ERROR] Evidência salva: error-person-b41251d2.html  error-person-b41251d2.png
+2025-05-06 22:03:50,889 [INFO] ✔ Salvo em resultado.json
