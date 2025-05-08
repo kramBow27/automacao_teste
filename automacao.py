@@ -1,12 +1,6 @@
 """RPA Bot – Portal da Transparência  v1.8
 ────────────────────────────────────────────────────────────────────────
-* Garante DOM pronto antes de interagir:
-  • wait_dom() → espera document.readyState == 'complete'
-  • WebDriverWait em cada ponto crítico.
-* Lista agora SEM cortes indevidos: processa exatamente os dez primeiros
-  links distintos.
-* Parcela nunca mais vazia: parse_benefit() só prossegue quando o <table>
-  apareceu (ou estoura Timeout).                                   2025-05
+
 """
 
 from __future__ import annotations
