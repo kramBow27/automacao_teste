@@ -9,7 +9,80 @@
       "beneficios": [
         {
           "beneficio": "Auxílio Emergencial",
-          "parcelas": []
+          "parcelas": [
+            {
+              "mes": "12/2020",
+              "parcela": "8",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "300,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "11/2020",
+              "parcela": "7",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "300,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "11/2020",
+              "parcela": "6",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "300,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "10/2020",
+              "parcela": "5",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "600,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "09/2020",
+              "parcela": "4",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "600,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "08/2020",
+              "parcela": "3",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "600,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "07/2020",
+              "parcela": "2",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "600,00",
+              "obs": "NÃO HÁ"
+            },
+            {
+              "mes": "05/2020",
+              "parcela": "1",
+              "uf": "BA",
+              "municipio": "POJUCA",
+              "enquadramento": "EXTRACAD",
+              "valor": "600,00",
+              "obs": "NÃO HÁ"
+            }
+          ]
         }
       ]
     },
