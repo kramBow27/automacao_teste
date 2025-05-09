@@ -1,0 +1,50 @@
+2025-05-09 15:44:30,343 - INFO - Evidência salva: sucesso_lista_b74c84d8
+2025-05-09 15:44:30,344 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271323057-a-anne-christine-silva-ribeiro
+2025-05-09 15:44:39,762 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/315919307-a-da-maria-camilo
+2025-05-09 15:44:45,228 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima
+2025-05-09 15:44:58,771 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/195266592-a-dja-simony-dos-santos-silva
+2025-05-09 15:45:04,332 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/198070312-a-dla-dos-santos-de-oliveira
+2025-05-09 15:45:08,642 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/210435205-a-dna-salomita-da-silva-fonseca-lima
+2025-05-09 15:45:13,253 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/107816923-a-dna-shara-silva-santos
+2025-05-09 15:45:23,849 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/222647277-a-dria-batista-da-conceicao
+2025-05-09 15:45:28,877 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/213941478-a-emmanuel-iorbee
+2025-05-09 15:45:35,156 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/6027443-a-gueda-maria-sidronio
+2025-05-09 15:45:54,128 - INFO - Salvo em beneficiarios.json
+2025-05-09 15:59:57,622 - ERROR - Falha ao executar: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71A59CF25+75717]
+	GetHandleVerifier [0x00007FF71A59CF80+75808]
+	(No symbol) [0x00007FF71A368DCC]
+	(No symbol) [0x00007FF71A35617B]
+	(No symbol) [0x00007FF71A35503E]
+	(No symbol) [0x00007FF71A379DB4]
+	(No symbol) [0x00007FF71A3EEE75]
+	(No symbol) [0x00007FF71A40ECC2]
+	(No symbol) [0x00007FF71A3E7153]
+	(No symbol) [0x00007FF71A3B0421]
+	(No symbol) [0x00007FF71A3B11B3]
+	GetHandleVerifier [0x00007FF71A89D6FD+3223453]
+	GetHandleVerifier [0x00007FF71A897CA2+3200322]
+	GetHandleVerifier [0x00007FF71A8B5AD3+3322739]
+	GetHandleVerifier [0x00007FF71A5B69FA+180890]
+	GetHandleVerifier [0x00007FF71A5BE0FF+211359]
+	GetHandleVerifier [0x00007FF71A5A5274+109332]
+	GetHandleVerifier [0x00007FF71A5A5422+109762]
+	GetHandleVerifier [0x00007FF71A58BA39+4825]
+	BaseThreadInitThunk [0x00007FFDDB3D259D+29]
+	RtlUserThreadStart [0x00007FFDDC00AF38+40]
+
+2025-05-09 16:00:09,688 - INFO - Evidência salva: sucesso_lista_2004881c
+2025-05-09 16:00:09,689 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271323057-a-anne-christine-silva-ribeiro
+2025-05-09 16:00:13,513 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/315919307-a-da-maria-camilo
+2025-05-09 16:00:17,242 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima
+2025-05-09 16:00:26,662 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/195266592-a-dja-simony-dos-santos-silva
+2025-05-09 16:00:31,558 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/198070312-a-dla-dos-santos-de-oliveira
+2025-05-09 16:00:36,288 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/210435205-a-dna-salomita-da-silva-fonseca-lima
+2025-05-09 16:00:41,106 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/107816923-a-dna-shara-silva-santos
+2025-05-09 16:00:53,793 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/222647277-a-dria-batista-da-conceicao
+2025-05-09 16:00:58,332 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/213941478-a-emmanuel-iorbee
+2025-05-09 16:01:03,972 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/6027443-a-gueda-maria-sidronio
+2025-05-09 16:01:20,943 - INFO - Salvo em beneficiarios.json
