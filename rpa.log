@@ -48,3 +48,273 @@ Stacktrace:
 2025-05-09 16:00:58,332 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/213941478-a-emmanuel-iorbee
 2025-05-09 16:01:03,972 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/6027443-a-gueda-maria-sidronio
 2025-05-09 16:01:20,943 - INFO - Salvo em beneficiarios.json
+2025-05-13 15:29:11,128 - INFO - Evidência salva: sucesso_lista_31df474d
+2025-05-13 15:29:11,129 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16246906-laecio-francisco-da-silva
+2025-05-13 15:29:45,004 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16246906-laecio-francisco-da-silva: HTTPConnectionPool(host='localhost', port=62594): Max retries exceeded with url: /session/f8e55af6ae22d9cb183d0f7f2c8a4605/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021210B3A4D0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2025-05-13 15:30:17,696 - ERROR - Falha ao executar: HTTPConnectionPool(host='localhost', port=62594): Max retries exceeded with url: /session/f8e55af6ae22d9cb183d0f7f2c8a4605/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021210B4C910>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2025-05-13 15:30:48,240 - INFO - Evidência salva: sucesso_lista_c1cd172e
+2025-05-13 15:30:48,240 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/23150538-edimar-brito-evangelista
+2025-05-13 15:30:54,788 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/20591157-ednilson-camilo-mota
+2025-05-13 15:31:06,343 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/189064877-francismar-rodrigues-de-souza
+2025-05-13 15:31:09,681 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/209844618-marcio-de-rezende-brito
+2025-05-13 15:31:14,339 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/217980078-joao-carlos-santos
+2025-05-13 15:31:18,216 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/220728725-emiliano-miranda-moura
+2025-05-13 15:31:23,649 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271917545-sebastiao-dos-santos-faial
+2025-05-13 15:31:27,082 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/10405124-aldenir-borges-pedrosa
+2025-05-13 15:31:30,033 - WARNING - Erro ao coletar parcelas: 'bpc'
+2025-05-13 15:31:33,246 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/11064498-jose-dias-da-silva
+2025-05-13 15:31:40,335 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/19530990-salete-sampaio-da-silva
+2025-05-13 15:31:56,827 - INFO - Salvo em beneficiarios.json
+2025-05-13 15:35:43,487 - INFO - Evidência salva: sucesso_lista_b8de1642
+2025-05-13 15:35:43,487 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271323057-a-anne-christine-silva-ribeiro
+2025-05-13 15:35:46,356 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/198814853-anne-christine-cardoso-ribeiro
+2025-05-13 15:35:49,508 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/205052998-anne-christine-amaral-da-silva
+2025-05-13 15:36:08,095 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/205052998-anne-christine-amaral-da-silva: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:08,212 - INFO - Evidência salva: beneficiario_19de79b0
+2025-05-13 15:36:08,212 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271047887-anne-christine-da-silva-goncalves
+2025-05-13 15:36:10,392 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271047887-anne-christine-da-silva-goncalves: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:10,519 - INFO - Evidência salva: beneficiario_6f5a9019
+2025-05-13 15:36:10,519 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/572117992-anne-christine-rodrigues-da-silva
+2025-05-13 15:36:11,339 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/572117992-anne-christine-rodrigues-da-silva: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:11,481 - INFO - Evidência salva: beneficiario_465330c5
+2025-05-13 15:36:11,481 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/192731151-anne-christine-da-silva-vianna-de-sousa
+2025-05-13 15:36:12,203 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/192731151-anne-christine-da-silva-vianna-de-sousa: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:12,318 - INFO - Evidência salva: beneficiario_dc170ba3
+2025-05-13 15:36:12,318 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/89759128-anne-christine-bastos-robbi-silva
+2025-05-13 15:36:13,006 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/89759128-anne-christine-bastos-robbi-silva: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:13,139 - INFO - Evidência salva: beneficiario_88a4dc75
+2025-05-13 15:36:13,139 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/29294380-ramayana-christine-silva-ribeiro
+2025-05-13 15:36:14,090 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/29294380-ramayana-christine-silva-ribeiro: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:14,255 - INFO - Evidência salva: beneficiario_116e7c05
+2025-05-13 15:36:14,256 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/278826270-agatha-christine-ribeiro-silva
+2025-05-13 15:36:15,039 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/278826270-agatha-christine-ribeiro-silva: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:15,185 - INFO - Evidência salva: beneficiario_8b23b713
+2025-05-13 15:36:15,185 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/209152029-anne-da-silva-ribeiro
+2025-05-13 15:36:16,020 - ERROR - Erro no beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/209152029-anne-da-silva-ribeiro: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.header[aria-controls='accordion-recebimentos-recursos']"}
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7802DCF25+75717]
+	GetHandleVerifier [0x00007FF7802DCF80+75808]
+	(No symbol) [0x00007FF7800A8F9A]
+	(No symbol) [0x00007FF7800FF4C6]
+	(No symbol) [0x00007FF7800FF77C]
+	(No symbol) [0x00007FF780152577]
+	(No symbol) [0x00007FF7801273BF]
+	(No symbol) [0x00007FF78014F39C]
+	(No symbol) [0x00007FF780127153]
+	(No symbol) [0x00007FF7800F0421]
+	(No symbol) [0x00007FF7800F11B3]
+	GetHandleVerifier [0x00007FF7805DD6FD+3223453]
+	GetHandleVerifier [0x00007FF7805D7CA2+3200322]
+	GetHandleVerifier [0x00007FF7805F5AD3+3322739]
+	GetHandleVerifier [0x00007FF7802F69FA+180890]
+	GetHandleVerifier [0x00007FF7802FE0FF+211359]
+	GetHandleVerifier [0x00007FF7802E5274+109332]
+	GetHandleVerifier [0x00007FF7802E5422+109762]
+	GetHandleVerifier [0x00007FF7802CBA39+4825]
+	BaseThreadInitThunk [0x00007FFF7AC1259D+29]
+	RtlUserThreadStart [0x00007FFF7C20AF38+40]
+
+2025-05-13 15:36:16,167 - INFO - Evidência salva: beneficiario_52c6ee12
+2025-05-13 15:36:19,112 - INFO - Salvo em beneficiarios.json
+2025-05-13 15:36:48,144 - INFO - Evidência salva: sucesso_lista_63845fd6
+2025-05-13 15:36:48,144 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/20591157-ednilson-camilo-mota
+2025-05-13 15:36:56,101 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/189064877-francismar-rodrigues-de-souza
+2025-05-13 15:37:00,866 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/23150538-edimar-brito-evangelista
+2025-05-13 15:37:05,721 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/209844618-marcio-de-rezende-brito
+2025-05-13 15:37:10,166 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271917545-sebastiao-dos-santos-faial
+2025-05-13 15:37:14,590 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/220728725-emiliano-miranda-moura
+2025-05-13 15:37:19,585 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/217980078-joao-carlos-santos
+2025-05-13 15:37:23,039 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/19530990-salete-sampaio-da-silva
+2025-05-13 15:37:30,890 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/11064498-jose-dias-da-silva
+2025-05-13 15:37:37,314 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/9481363-antonia-batista-dos-santos
+2025-05-13 15:38:11,653 - WARNING - Erro ao coletar parcelas: HTTPSConnectionPool(host='portaldatransparencia.gov.br', port=443): Read timed out. (read timeout=30)
+2025-05-13 15:38:35,453 - INFO - Salvo em beneficiarios.json
+2025-05-13 16:29:36,546 - INFO - Evidência salva: sucesso_lista_dd1f7130
+2025-05-13 16:29:36,547 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima
+2025-05-13 16:29:46,178 - INFO - Salvo em beneficiarios.json
+2025-05-13 16:44:20,218 - INFO - Evidência salva: sucesso_lista_c3b3163d
+2025-05-13 16:44:20,219 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima
+2025-05-13 16:44:31,162 - INFO - Salvo em beneficiarios.json
+2025-05-13 16:46:54,885 - INFO - Evidência salva: sucesso_lista_de1803da
+2025-05-13 16:46:54,886 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/200054975-anne-luyze-annes-tavares
+2025-05-13 16:47:02,681 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/196883132-anne-striplet
+2025-05-13 16:47:07,234 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/204229247-roberto-annes
+2025-05-13 16:47:11,615 - WARNING - Erro ao coletar parcelas: 'auxilio-reconstrucao'
+2025-05-13 16:47:13,800 - WARNING - Erro ao coletar parcelas: 'bpc'
+2025-05-13 16:47:16,488 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/188744425-anne-dattein
+2025-05-13 16:47:20,291 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/190482138-anne-tau
+2025-05-13 16:47:24,626 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/190348807-marisa-annes
+2025-05-13 16:47:26,789 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/207259267-anne-zugman
+2025-05-13 16:47:29,403 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/195185708-antonio-annes
+2025-05-13 16:47:33,868 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/44328829-anne-weigert
+2025-05-13 16:47:37,536 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/38433592-anne-rodrigues
+2025-05-13 16:47:43,053 - INFO - Salvo em beneficiarios.json
