@@ -318,3 +318,16 @@ Stacktrace:
 2025-05-13 16:47:33,868 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/44328829-anne-weigert
 2025-05-13 16:47:37,536 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/38433592-anne-rodrigues
 2025-05-13 16:47:43,053 - INFO - Salvo em beneficiarios.json
+2025-05-13 18:04:51,533 - INFO - Evidência salva: sucesso_lista_94b1f3c3
+2025-05-13 18:04:51,536 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/271323057-a-anne-christine-silva-ribeiro
+2025-05-13 18:04:57,957 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/315919307-a-da-maria-camilo
+2025-05-13 18:05:02,868 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/16979409-a-dila-da-silva-brito-lima
+2025-05-13 18:05:11,286 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/195266592-a-dja-simony-dos-santos-silva
+2025-05-13 18:05:15,886 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/198070312-a-dla-dos-santos-de-oliveira
+2025-05-13 18:05:18,721 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/210435205-a-dna-salomita-da-silva-fonseca-lima
+2025-05-13 18:05:22,852 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/107816923-a-dna-shara-silva-santos
+2025-05-13 18:05:29,973 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/222647277-a-dria-batista-da-conceicao
+2025-05-13 18:05:33,040 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/213941478-a-emmanuel-iorbee
+2025-05-13 18:05:36,051 - INFO - Processando beneficiario https://portaldatransparencia.gov.br/busca/pessoa-fisica/6027443-a-gueda-maria-sidronio
+2025-05-13 18:05:38,075 - WARNING - Erro ao coletar parcelas: Expecting value: line 1 column 1 (char 0)
+2025-05-13 18:05:46,884 - INFO - Salvo em beneficiarios.json
