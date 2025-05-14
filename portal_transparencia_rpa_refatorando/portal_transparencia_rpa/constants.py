@@ -3,10 +3,12 @@ from dotenv import load_dotenv
 import os, re
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+RUN_DIR: Path | None = None
 load_dotenv(BASE_DIR / ".env")
 
 # URLs
 BASE_URL = os.getenv("BASE_URL", "https://portaldatransparencia.gov.br")
+BASE = BASE_URL
 LIST_ENDPOINT = f"{BASE_URL}/pessoa-fisica/busca/lista"
 
 # Colunas por benefício

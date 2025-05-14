@@ -19,7 +19,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # ---- módulos do próprio projeto -------------------------------------------
 from .driver import build as new_driver  # cria o ChromeDriver
-from .constants import BASE, LIST_ENDPOINT, COLUNAS, PATH_JSON
+from .constants import BASE, LIST_ENDPOINT, COLUNAS, PATH_JSON, RUN_DIR
 from .selectors import anchor_rx
 # ----------------------------------------------------------------------------
 
@@ -67,16 +67,24 @@ def url_lista_beneficiarios(query: Optional[str]):
     return f"{LIST_ENDPOINT}?{urlencode(params, quote_via=quote_plus)}"
 
 
-def salva_evidencia(driver: webdriver.Chrome, prefixo: str):
-    """Salva HTML + screenshot para debug."""
+def salva_evidencia(driver, prefixo: str, base_dir: Path | None = None):
     uid = uuid.uuid4().hex[:8]
-    Path(f"{prefixo}_{uid}.html").write_text(driver.page_source, encoding="utf-8")
-    driver.save_screenshot(f"{prefixo}_{uid}.png")
+    base = base_dir or RUN_DIR or Path(".")
+
+    html_path = base / "html" / f"{prefixo}_{uid}.html"
+    png_path = base / "png" / f"{prefixo}_{uid}.png"
+
+    # cria as sub-pastas se preciso
+    html_path.parent.mkdir(parents=True, exist_ok=True)
+    png_path.parent.mkdir(parents=True, exist_ok=True)
+
+    html_path.write_text(driver.page_source, encoding="utf-8")
+    driver.save_screenshot(str(png_path))
     logger.info("Evidência salva: %s_%s", prefixo, uid)
 
 
-def higienizar(txt: str) -> str:
-    """Remove espaços/quebras de linha duplicados."""
+def higienizar(txt: Optional[str]) -> str:
+    """Remove espaços/quebras de linha duplicados e trata None."""
     return re.sub(r"\s+", " ", txt or "").strip()
 
 
@@ -90,10 +98,10 @@ def busca_beneficiarios(driver: webdriver.Chrome, query: Optional[str]):
     driver.get(url_lista_beneficiarios(query))
     links = espera_resultados(driver)
     if not links:
-        salva_evidencia(driver, "erro_lista")
+        salva_evidencia(driver, "erro_lista", RUN_DIR)
         raise RuntimeError("Nenhum beneficiário encontrado")
 
-    salva_evidencia(driver, "sucesso_lista")
+    salva_evidencia(driver, "sucesso_lista", RUN_DIR)
     # remove duplicados preservando ordem
     return list(dict.fromkeys(links))[:10]
 
@@ -376,7 +384,7 @@ def mapea_beneficiario(driver: webdriver.Chrome, url: str):
             card["parcelas"] = mapea_beneficio(driver, card["href"], beneficiario_id)
         except Exception as e:
             logger.error("Erro no benefício %s: %s", card.get("href"), e)
-            salva_evidencia(driver, "beneficio")
+            salva_evidencia(driver, "beneficio", RUN_DIR)
         finally:
             driver.get(ficha_url)
             espera_dom(driver)
@@ -403,7 +411,7 @@ def run(query: Optional[str], visible: bool = False):
                 beneficiarios.append(mapea_beneficiario(driver, b))
             except Exception as e:
                 logger.error("Erro no beneficiário %s: %s", b, e)
-                salva_evidencia(driver, "beneficiario")
+                salva_evidencia(driver, "beneficiario", RUN_DIR)
         return {"consulta": query, "beneficiarios": beneficiarios}
     finally:
         driver.quit()

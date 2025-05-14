@@ -1,0 +1,19 @@
+2025-05-14 08:40:20,290 - ERROR - Falha geral
+Traceback (most recent call last):
+  File "C:\Users\henrique.luna\Desktop\hl\automacao_teste\portal_transparencia_rpa_refatorando\portal_transparencia_rpa\cli.py", line 44, in main
+    data = run(args.query, args.visible, base_dir=run_dir)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henrique.luna\Desktop\hl\automacao_teste\portal_transparencia_rpa_refatorando\portal_transparencia_rpa\pipeline.py", line 25, in run
+    for b in busca_beneficiarios(driver, query):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henrique.luna\Desktop\hl\automacao_teste\portal_transparencia_rpa_refatorando\portal_transparencia_rpa\scraper.py", line 102, in busca_beneficiarios
+    salva_evidencia(driver, "sucesso_lista", RUN_DIR)
+  File "C:\Users\henrique.luna\Desktop\hl\automacao_teste\portal_transparencia_rpa_refatorando\portal_transparencia_rpa\scraper.py", line 79, in salva_evidencia
+    html_path.write_text(driver.page_source, encoding="utf-8")
+  File "C:\Users\henrique.luna\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1078, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\henrique.luna\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'html\\sucesso_lista_b62f6352.html'
